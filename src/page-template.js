@@ -8,7 +8,7 @@ module.exports = teamData => {
                 <h2>${teamData[i].name}</h2>
                 <h3>Manager <i class="fas fa-glasses"></i></h3>
                 <p class="title">ID:${teamData[i].id} </p>
-                <p>Email:${teamData[i].email} </p>
+                <p><a href=${teamData[i].email} target="_blank">Email</a></p>
                 <p>Office Number: ${teamData[i].officeNumber}</p>
           </div>
            `
@@ -19,7 +19,7 @@ module.exports = teamData => {
                 <h2>${teamData[i].name}</h2>
                 <h3>Intern <i class="fas fa-school"></i></h3>
                 <p class="title">ID:${teamData[i].id} </p>
-                <p>Email:${teamData[i].email} </p>
+                <p><a href=${teamData[i].email} target="_blank">Email</a></p>
                 <p>School Name: ${teamData[i].school}</p>
           </div>
            `
@@ -30,8 +30,8 @@ module.exports = teamData => {
               <h2>${teamData[i].name}</h2>
               <h3>Engineer <i class="fab fa-wpbeginner"></i></h3>
               <p class="title">ID:${teamData[i].id} </p>
-              <p>Email:${teamData[i].email} </p>
-              <p><a href=${teamData[i].github} target="_blank">Git Hub Page</a></li>
+              <p><a href=${teamData[i].email} target="_blank">Email</a></p>
+              <p><a href=${teamData[i].github} target="_blank">Git Hub Page</a></p>
         </div>
          `
       cards.push(html)
